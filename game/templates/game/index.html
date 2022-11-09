@@ -1,0 +1,15 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<div class="container text-center">
+    <h1>Камень-Ножницы-Бумага</h1>
+    <br>
+    <form action="{% url 'result' %}">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="choice">
+            <option value="rock">Камень</option>
+            <option value="knife">Ножницы</option>
+            <option value="paper">Бумага</option>
+        </select>
+        <br>
+        <input type="submit" value="В бой!" class="btn btn-primary">
+    </form>
+</div>
